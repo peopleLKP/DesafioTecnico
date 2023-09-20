@@ -21,7 +21,7 @@
 Construção de uma API RESTful usando a tecnologia NodeJS.
 ### Fluxograma
 
-![image](./img/apigateway.png)
+![image](./apigateway.png)
 
 ## Endpoints
 Endpoint - Listagem de usuários
@@ -90,7 +90,7 @@ Esta api suporta parâmetros de ordenação que podem ser utilizados através da
 Desenvolvimento de uma automação em NodeJs.
 ### Fluxograma
 
-![image](./img/atm.png)
+![image](./atm.png)
 
 ### Requisitos
 1. Criar um Script de automação em NodeJs, com as regras de negócio e funcionalidade dos steps
