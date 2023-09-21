@@ -1,19 +1,28 @@
-# Desafio Técnico LinkApi - Junior
+# Desafio Técnico LinkApi - Júnior
 ## Instruções
 - Leia atentamente as instruções abaixo para realização do teste proposto.
 - Desenvolva e versione os projetos usando git.
 - Utilize o GitHub para hospedar o código em um repositório privado.
 - Crie a documentação de como executar e consumir seu projeto.
-- Compartilhe este repositório privado como o e-mail people@linkapi.com.br.
+- Compartilhe este repositório privado com o e-mail people@linkapi.com.br.
 - Enviar o link do repositório para people@linkapi.com.br.
-# O que será validado?
+
+## ⚠ IMPORTANTE - CRITÉRIOS DE DESCLASSIFICAÇÃO ⚠
+
+- O teste em questão deve ser feito utilizando a engine NodeJS (Vanilla JavaScript ou
+TypeScript), caso contrário, o candidato será desclassificado automaticamente.
+- O repositório deve estar com o compartilhamento privado, caso contrário, o candidato será
+desclassificado automaticamente.
+
+# O que será avaliado?
 - Requisitos realizados.
 - Desacoplamento de código.
 - Legibilidade de código.
 - Boas práticas de desenvolvimento de API RESTful.
+- Mapeamento dos campos.
 - Performance das aplicações.
 - Documentação das aplicações.
-- Exposição de dados sensíveis no código
+- Exposição de dados sensíveis no código.
 
 # Projeto 1 - API GATEWAY 
 
@@ -27,8 +36,7 @@ Construção de uma API RESTful usando a tecnologia NodeJS.
 Endpoint - Listagem de usuários
 1. Construir uma API RESTful que receba uma chamada simples e realizar a listagem de usuários do
 serviço MockApi conforme os passos posteriores.
-2. Deverá ser feita uma requisição para o serviço MockApi realizando a listagem de usuários através da
-rota GET /users
+2. Deverá ser feita uma requisição para o serviço MockApi realizando a listagem de usuários, através da rota GET /users
 3. Com a resposta da requisição anterior, deverá ser criado um subprocesso para cada usuário
 retornado.
 4. Para cada usuário retornado, deverá ser feita uma chamada na seguinte rota para resgatar o
@@ -73,7 +81,7 @@ contatos).
 - URL base da API: https://{{host}}.mockapi.io/api/v1
 - Parâmetro Host: Enviado por e-mail
 #### Parâmetros de paginação
-Esta api suporta parâmetros de paginação que podem ser utilizados através da queryString para realizar a listagem completa de dados:
+Esta api suporta parâmetros de paginação que podem ser utilizados, através da queryString para realizar a listagem completa de dados:
 - page: Número da pagina a ser buscada
 - limit: Quantidade de elementos a serem retornados por página
  #### Exemplo de utilização:
@@ -84,6 +92,8 @@ Esta api suporta parâmetros de ordenação que podem ser utilizados através da
 - order:Ordem de classificação (asc ou desc)
 #### Exemplo de utilização:
 - GET /users?sortBy=createdAt&order=desc
+
+
 
 # Projeto 2 - Automação de Conversão
 ### Objetivo
@@ -98,7 +108,7 @@ posteriores.
 2. Seu script deverá inicialmente realizar a busca de todos os usuários na API que foi desenvolvida
 anteriormente.
 3. Com a resposta da requisição anterior, deverá ser criado um subprocesso para cada usuário
-retornado
+retornado.
 4. Converter a estrutura de cada usuário para a estrutura abaixo:
 
 ```json
@@ -116,3 +126,15 @@ collection “users”.
 ## Pontos de atenção
 Para a criação do banco de dados MongoDB é preferível a entrega com Docker, mas existem serviços
 como MongoDB Atlas para criação de uma instancia gratuitamente que atende este requisito.
+
+### Links que podem ser úteis no desenvolvimento:
+
+- https://semantix.ai/primeiros-passos-em-api-gateway/
+- https://semantix.ai/como-chegar-ao-nivel-supremo-de-apis-restful/
+- https://semantix.ai/politicas-em-apis-restful/
+- https://semantix.ai/seguranca-em-apis-restful/
+- https://semantix.ai/performance-em-apis-restful-cache-compressao-e-mais/
+- https://semantix.ai/api-restful-o-que-voce-precisa-saber-sobre-metodos-e-codigos-de-status-do-protocolo-http/
+- https://semantix.ai/a-anatomia-de-uma-api-restful/
+- https://semantix.ai/paginacao-ordenacao-e-filtros-em-apis-restful/
+- https://semantix.ai/o-que-sao-funcoes-de-ordem-superior-em-javascript/
